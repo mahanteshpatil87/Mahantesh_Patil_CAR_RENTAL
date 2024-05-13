@@ -10,7 +10,7 @@ class MyTestCases(unittest.TestCase):
         self.car = CarManagementImplementation()
         self.lease_manage = LeaseManagementImplementation()
 
-    def test_car_create(self):
+    def test_car_creation(self):
         result = self.car.addCar(Car(0, make="Tata", model="Sumo", Year="2014", dailyRate="35", status="1", passenger_capacity="12", engine_capacity="2400"))
 
         self.assertEqual(result, "Successfully Added the Car")
